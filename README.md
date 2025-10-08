@@ -24,10 +24,15 @@ Includes a batch launcher to elevate privileges automatically and start the upgr
 ## 📁 Repository Structure
 
 Windows11-Upgrade-Script/
+
 │
+
 ├── script.ps1 # Main PowerShell upgrade logic
+
 ├── run.bat # Launcher that starts script.ps1 with admin rights
+
 ├── README.md # Documentation (this file)
+
 └── LICENSE # MIT license
 
 ---
