@@ -62,10 +62,15 @@ C:\Install\Win11Upgrade\Windows11Upgrade_<timestamp>.log
 ## 🧾 Example Output
 
 Checking system version...
+
 Mounting ISO: C:\windows11.iso
+
 ISO mounted on drive: E:
+
 Starting Windows 11 upgrade...
+
 Upgrade process has started.
+
 Upgrade information written to registry.
 
 
