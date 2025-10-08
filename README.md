@@ -20,7 +20,7 @@ Includes a batch launcher to elevate privileges automatically and start the upgr
 
 ## 📁 Repository Structure
 
-Windows11-Upgrade-Script/
+Windows11-Upgrade-Automation/
 
 │
 
