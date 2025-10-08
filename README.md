@@ -1,6 +1,3 @@
-# Win11-Upgrade-Automation
-Internal IT script for automating Windows 11 upgrades with minimal user interaction.
-
 # 🪟 Windows 11 Upgrade Script
 
 PowerShell script that automates a **silent in-place upgrade to Windows 11 25H2 (build 26000+)** using a local ISO image.  
