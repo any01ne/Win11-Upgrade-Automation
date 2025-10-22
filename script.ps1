@@ -32,10 +32,6 @@ try {
         throw "This script must be run with administrator privileges."
     }
 
-    # Remove AppLocker contents (except for user Alfa and the startup folder)
-    Write-Output "Removing AppLocker folder contents..."
-    Remove-Item -Path "C:\Windows\System32\AppLocker\*" -Force -Recurse -ErrorAction SilentlyContinue
-
     # Mount the ISO
     Write-Output "Mounting ISO: $ISOPath"
     $MountResult = Mount-DiskImage -ImagePath $ISOPath -PassThru
@@ -68,14 +64,6 @@ try {
 
     Write-Output "Upgrade process has started."
 
-    # Save upgrade info to registry
-    $regPath  = "HKLM:\Software\UpgradeStatus"
-    $regName  = "WindowsUpgrade"
-    $regValue = 1
-    if (-not (Test-Path $regPath)) {
-        New-Item -Path $regPath -Force | Out-Null
-    }
-    New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD -Force | Out-Null
 }
 catch {
     Write-Error "An error occurred: $_"
