@@ -14,7 +14,6 @@ Includes a batch launcher to elevate privileges automatically and start the upgr
 - Mounts and unmounts the ISO automatically  
 - Runs Windows Setup silently with upgrade parameters  
 - Logs all operations and results  
-- Writes registry flag `HKLM:\Software\UpgradeStatus\WindowsUpgrade = 1` after initiating upgrade  
 
 ---
 
@@ -63,8 +62,6 @@ ISO mounted on drive: E:
 Starting Windows 11 upgrade...
 
 Upgrade process has started.
-
-Upgrade information written to registry.
 
 
 ---
